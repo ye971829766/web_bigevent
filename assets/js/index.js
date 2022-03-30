@@ -36,7 +36,7 @@ function getUserInfo() {
 
 function renderAvatar(user) {
     // 用户名等于
-    let name = user.username || user.nickname
+    let name = user.nickname || user.username
     // &nbsp;是空格
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     // 如果用户上传头像，则显示图片头像，如果没上传，显示文字头像
